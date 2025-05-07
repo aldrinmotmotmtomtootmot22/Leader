@@ -2,42 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Group Project Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FastBite - Delicious Fast Food</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #b71c1c;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Designer -->
+
   <header>
-    <h1>Welcome to Our Project</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>FastBite</h1>
+    <p>Your Favorite Fast Food, Served Fast!</p>
   </header>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#locations">Locations</a>
+    <a href="#order">Order Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- Content Creator -->
-  <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </section>
-
-    <!-- Image Manager -->
-    <section>
-      <h2>Our Visual</h2>
-      <img src="https://via.placeholder.com/400x200" alt="Placeholder image" />
-      <p class="caption">Image from via.placeholder.com</p>
-    </section>
-
-    <!-- Button Maker -->
-    <section>
-      <h2>Click Below</h2>
-      <button onclick="alert('Button clicked!')">Click Me!</button>
-    </section>
-  </main>
 </body>
 </html>

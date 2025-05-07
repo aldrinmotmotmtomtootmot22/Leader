@@ -1,60 +1,58 @@
-/* General Styles */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Content */
-  main {
-    padding: 2rem;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .caption {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  /* Button Styles */
-  button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(to right, #e53935, #d32f2f);
+  color: white;
+  padding: 30px 0 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #c62828;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd54f;
+}
+
+/* Add some spacing for future content */
+main {
+  padding: 40px 20px;
+}
