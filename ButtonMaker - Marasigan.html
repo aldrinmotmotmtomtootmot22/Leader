@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Button Maker - Restaurants</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    button {
+      padding: 14px 20px;
+      font-size: 18px;
+      width: 100%;
+      cursor: pointer;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff2a2a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Restaurant Buttons</h1>
+
+  <div class="button-container">
+    <button onclick="showMenu('Battle Hunger Malolos')">🍔 View Menu for Battle Hunger Malolos</button>
+    <button onclick="showMenu('Kalye Mabini')">🌶️ View Menu for Kalye Mabini</button>
+    <button onclick="showMenu('Ericahlicious Brew and Bake')">🍰 View Menu for Ericahlicious Brew and Bake</button>
+    <button onclick="showMenu('Bahay na Tisa')">🏠 View Menu for Bahay na Tisa</button>
+    <button onclick="showMenu('Pastry Chef Malolos')">🧁 View Menu for Pastry Chef Malolos</button>
+  </div>
+
+  <script>
+    function showMenu(restaurantName) {
+      alert("Menu for " + restaurantName + " is coming soon! 🍽️");
+    }
+  </script>
+
+</body>
+</html>
+
