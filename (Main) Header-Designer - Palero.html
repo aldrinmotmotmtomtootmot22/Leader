@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philippine Restaurants Guide</title>
+  <header>
+    <h1>Top 5 Restaurants in Malolos Bulacan</h1>
+    <p>Your guide to the best food spots when visiting Malolos!</p>
+  </header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      background-color: #ffe6e6;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+    }
+
+    .container {
+      display: block;
+      padding: 20px 20px 20px 40px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 200px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+
+    .extra-info {
+      padding: 15px;
+      width: 200px;
+      background-color: #f7f7f7;
+      border-left: 1px solid #ddd;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #ff2a2a;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <div class="card">
+      <img src="images/battle-hunger.jpg"/>
+      <div class="card-content">
+        <h3>Battle Hunger Malolos</h3>
+        <p>Location: 61 Camia St, Malolos, 3000 Bulacan</p>
+        <p>Description: Battle Hunger Malolos is the ultimate destination for hearty meals that hit <br>
+            the spot every time. Whether you're craving local favorites or something a little <br>
+            different, their diverse menu promises something for every taste. Perfect for casual dining, <br>
+            this restaurant is a great place to satisfy your hunger with delicious, flavorful dishes.</p>
+        <button onclick="showMenu('Battle Hunger Malolos')">View Menu</button>
+      </div>
+      <div class="extra-info">
+        <p><strong>Price Range:</strong> ₱150 - ₱300</p>
+        <p><strong>Opening Hours:<br></strong> 10:00 AM - 9:00 PM</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/kalye-mabini.jpg" />
+      <div class="card-content">
+        <h3>Kalye Mabini</h3>
+        <p>Location: 6381 BE McArthur Hwy Longos, 3000 Malolos City, Bulacan</p>
+        <p>Description: A vibrant and cozy place to dine, Kalye Mabini brings a unique street-food-inspired <br>
+            dining experience right to Malolos. With an array of local and international dishes, this charming <br>
+            spot is ideal for those looking to enjoy delicious comfort food in a relaxed setting. It is a <br>
+            must-visit for food lovers wanting to explore something new and exciting.</p>
+        <button onclick="showMenu('Kalye Mabini')">View Menu</button>
+      </div>
+      <div class="extra-info">
+        <p><strong>Price Range:</strong> ₱100 - ₱250</p>
+        <p><strong>Opening Hours:<br></strong> 9:00 AM - 10:00 PM</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/Ericahlicious.png"  />
+      <div class="card-content">
+        <h3>Ericahlicious Brew and Bake</h3>
+        <p>Location: Unit 13, Sanxing Commercial Building, Blas Ople Road, Bulihan, 3000 Malolos City, Bulacan</p>
+        <p>Description: Ericahlicious Brew and Bake is a haven for coffee enthusiasts and pastry lovers alike. <br>
+            Offering a variety of freshly brewed coffee and delectable baked goods, this cafe provides a cozy <br>
+            atmosphere perfect for catching up with friends or enjoying a quiet afternoon. Their baked treats <br>
+            are freshly made, and the coffee selection is sure to keep you coming back for more.</p>
+        <button onclick="showMenu('Ericahlicious Brew and Bake')">View Menu</button>
+      </div>
+      <div class="extra-info">
+        <p><strong>Price Range:</strong> ₱80 - ₱200</p>
+        <p><strong>Opening Hours:<br></strong> 8:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/bahay-na-tisa.jpg" />
+      <div class="card-content">
+        <h3>Bahay na Tisa</h3>
+        <p>Location: 79 Independencia St, 3000 Malolos, Bulacan</p>
+        <p>Description: Step into Bahay na Tisa, a hidden gem that blends local charm with mouthwatering dishes. <br>
+            Whether you're in the mood for Filipino classics or inventive takes on traditional flavors, this <br>
+            restaurant delivers it all. Enjoy your meal in a comfortable setting with a welcoming ambiance that <br> 
+            makes dining here a delightful experience. Great for family gatherings or casual get-togethers.</p>
+        <button onclick="showMenu('Bahay na Tisa')">View Menu</button>
+      </div>
+      <div class="extra-info">
+        <p><strong>Price Range:</strong> ₱120 - ₱350</p>
+        <p><strong>Opening Hours:<br></strong> 10:00 AM - 8:00 PM</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/Pastry-Chef.jpg" />
+      <div class="card-content">
+        <h3>Pastry Chef Malolos</h3>
+        <p>Location: 9020 MacArthur Highway, Malolos, Bulacan, Philippines</p>
+        <p>Description: For those with a sweet tooth, Pastry Chef Malolos is the ultimate destination. Specializing <br>
+            in a variety of delightful pastries, cakes, and desserts, this bakery offers treats that are both visually <br>
+            appealing and irresistibly tasty. Whether you're in the mood for a rich slice of cake or a light, buttery <br>
+            pastry, you'll find the perfect indulgence to satisfy your cravings at this delightful spot.</p>
+        <button onclick="showMenu('Pastry Chef Malolos')">View Menu</button>
+      </div>
+      <div class="extra-info">
+        <p><strong>Price Range:</strong> ₱348/head</p>
+        <p><strong>Opening Hours:<br></strong> 9:00 AM - 7:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h1>Group 9</h1>
+    <p>Palero, Aldrin <br> Clemente, Neil Chester <br>Galang, Angela Mae<br>Gaw, Giles Arvin<br>Marasigan, King Gabriel</p>
+  </footer>
+
+  <script>
+    function showMenu(restaurantName) {
+      alert("Menu for " + restaurantName + " is coming soon! 🍽️");
+    }
+  </script>
+
+</body>
+</html>
